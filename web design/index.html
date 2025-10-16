@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamburger Menu</title>
+  <link rel="stylesheet" type="text/css" href="roff.css">
+  
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul id="navMenu" class="menu">
+    <li><a href="roff.html">Home</a></li>
+    <li><a href="football.html">Football</a></li>
+    <li><a href="cars.html">Cars</a></li>
+    <li><a href="movies.html">Movies</a></li>
+  </ul>
+  <h1>Welcome to my home page</h1>
+  <p>It is a plessure to meet you today</p>
+  <p>Come and explore my interests in:</p>
+  <div class="pitch">
+ 
+  <div class="player midfielder"><a href="cars.html">Cars</a></div>
+  <div class="player forward"><a href="football.html">Football</a></div>
+  <div class="player forward"><a href="wrestle.html">WWE</a></div>
+  <div class="player forward"><a href="movies.html">Movies</a></div>
+</div>
+
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
