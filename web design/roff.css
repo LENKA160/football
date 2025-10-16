@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #22ADAA;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #741719;
+  color: white;
+  width: 50px;
+  text-align: center;
+}
+
+.menu {
+  display: none; /* hidden by default for mobile */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ad2225;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+
+.pitch {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  gap: 10px;
+  max-width: 100%;
+  margin: auto;
+  background: #741719;
+  padding: 20px;
+}
+
+.player {
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Positioning players */
+.goalkeeper { grid-column: 3; grid-row: 5; }
+.defender:nth-child(2) { grid-column: 1; grid-row: 4; }
+.defender:nth-child(3) { grid-column: 2; grid-row: 4; }
+.defender:nth-child(4) { grid-column: 4; grid-row: 4; }
+.defender:nth-child(5) { grid-column: 5; grid-row: 4; }
+.midfielder:nth-child(6) { grid-column: 2; grid-row: 3; }
+.midfielder:nth-child(7) { grid-column: 3; grid-row: 3; }
+.midfielder:nth-child(8) { grid-column: 4; grid-row: 3; }
+.forward:nth-child(9) { grid-column: 2; grid-row: 2; }
+.forward:nth-child(10) { grid-column: 3; grid-row: 2; }
+.forward:nth-child(11) { grid-column: 4; grid-row: 2; }
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .pitch {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .player img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hamburger {
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu li a {
+    font-size: 14px;
+  }
+}

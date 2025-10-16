@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamburger Menu</title>
+  <link rel="stylesheet" type="text/css" href="roff.css">
+  <link rel="stylesheet" type="text/css" href="roff.css">
+  
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul id="navMenu" class="menu">
+    <li><a href="roff.html">Home</a></li>
+    <li><a href="football.html">Football</a></li>
+    <li><a href="cars.html">Cars</a></li>
+    <li><a href="movies.html">Movies</a></li>
+  </ul>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+  <h1>My Dream football team</h1>
+<p>Introducing my dream football team that i always wanted :</p>
+<div class="pitch">
+  <div class="player goalkeeper">
+    <img src="kasper.webp"></div>
+  <div class="player defender"> <img src="virgil.webp" > </div>
+  <div class="player defender"><img src="ramos.webp"></div>
+  <div class="player defender"><img src="stones.webp"></div>
+  <div class="player defender"> <img src="white.webp"></div>
+  <div class="player midfielder"><img src="palmer.webp"></div>
+  <div class="player midfielder"><img src="ronaldinho.webp"></div>
+  <div class="player midfielder"> <img src="harzard.webp"></div>
+  <div class="player forward"><img src="neymar.webp"></div>
+  <div class="player forward"><img src="ronaldo.webp"></div>
+  <div class="player forward"><img src ="messi.webp"></div>
+</div>
